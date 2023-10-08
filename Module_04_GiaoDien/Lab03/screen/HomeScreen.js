@@ -26,8 +26,13 @@ export default function HomeScreen() {
           <TouchableOpacity style={styles.screen} onPress={()=>navigation.navigate('Login')}>
               <Text style={styles.text1}>Login</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={styles.screen} onPress={()=>navigation.navigate('ortherBook')}>
+              <Text style={styles.text1}>OrtherBook</Text>
+          </TouchableOpacity>
+          
          
         </View>
+        
 
 
 
@@ -56,11 +61,10 @@ const styles = StyleSheet.create({
     
   },
   screen2:{
-    
-   justifyContent:'center',
-   alignItems:'center',
+    marginVertical:20,
+    flexDirection:'row',
+    justifyContent:'space-between',
     width:'70%',
-    marginVertical:50
   },
   
   screen:{

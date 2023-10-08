@@ -17,7 +17,9 @@ const Login = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
-        <Text style={styles.textLOGIN}>LOGIN</Text>
+        <View style={{position:'absolute',left:10}}>
+          <Text style={styles.textLOGIN}>LOGIN</Text>
+        </View>
         <View style={[styles.email,{flexDirection:'row',alignItems:'center',backgroundColor:'#DCBE3B',borderColor:'white',shadowColor:'#DCBE3B',shadowOpacity:0.8}]}>
           <FontAwesome5 name="user-alt" size={24} color="black" />
           <TextInput style={styles.textEmail} placeholder="Email"></TextInput>

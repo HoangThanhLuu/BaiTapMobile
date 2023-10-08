@@ -8,13 +8,14 @@ import Login from "../screen/Login";
 import HomeScreen from "../screen/HomeScreen";
 import USB from "../screen/USB";
 import PassWord from "../screen/PassWord";
+import ortherBook from "../screen/ortherBook";
 
 const Stack = createNativeStackNavigator();
 const AppNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
+        {/* <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
           options={{ headerShown: false }}
@@ -32,6 +33,11 @@ const AppNavigation = () => {
          <Stack.Screen
           name="PassWord"
           component={PassWord}
+         
+        /> */}
+         <Stack.Screen
+          name="ortherBook"
+          component={ortherBook}
          
         />
      
