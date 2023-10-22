@@ -6,18 +6,19 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from "@react-navigation/native";
-const Screen1 = () => {
+const Screen1 = ({route}) => {
 
     const navigation = useNavigation();
+    const[imageColor,setImageColor] = useState(require('../assets/Star.png'));
   return (
     <View style={styles.container}>
       <View style={styles.body}>
         <Image
           style={styles.imageBlue}
-          source={require("../assets/MobileBllu.png")}
+          source={ route.params?.mau}//? ở đây là có nhận màu được kh
         />
 
         <View style={styles.allCenter}>
@@ -25,24 +26,34 @@ const Screen1 = () => {
           <View style={styles.imgStar}>
             <View style={styles.imgStarFire}>
                 <Image
+                  onMouseEnter={() => setImageColor(() => (require('../assets/Star_blue.png')))}
+                  onMouseLeave={() => setImageColor(() => (require('../assets/Star.png')))}
                   style={styles.imageStar}
-                  source={require("../assets/Star.png")}
+                  source={imageColor} 
                 />
                 <Image
-                  style={styles.imageStar}
-                  source={require("../assets/Star.png")}
+                 onMouseEnter={() => setImageColor(() => (require('../assets/Star_blue.png')))}
+                 onMouseLeave={() => setImageColor(() => (require('../assets/Star.png')))}
+                 style={styles.imageStar}
+                 source={imageColor}
                 />
                 <Image
-                  style={styles.imageStar}
-                  source={require("../assets/Star.png")}
+                 onMouseEnter={() => setImageColor(() => (require('../assets/Star_blue.png')))}
+                 onMouseLeave={() => setImageColor(() => (require('../assets/Star.png')))}
+                 style={styles.imageStar}
+                 source={imageColor}
                 />
                 <Image
+                  onMouseEnter={() => setImageColor(() => (require('../assets/Star_blue.png')))}
+                  onMouseLeave={() => setImageColor(() => (require('../assets/Star.png')))}
                   style={styles.imageStar}
-                  source={require("../assets/Star.png")}
+                  source={imageColor}
                 />
                 <Image
-                  style={styles.imageStar}
-                  source={require("../assets/Star.png")}
+                 onMouseEnter={() => setImageColor(() => (require('../assets/Star_blue.png')))}
+                 onMouseLeave={() => setImageColor(() => (require('../assets/Star.png')))}
+                 style={styles.imageStar}
+                 source={imageColor}
                 />
             </View>
             <Text style={styles.textStar}>(Xem 828 đánh giá)</Text>

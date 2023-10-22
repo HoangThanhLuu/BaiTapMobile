@@ -15,7 +15,7 @@ const AppNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen
+        <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
           options={{ headerShown: false }}
@@ -34,7 +34,7 @@ const AppNavigation = () => {
           name="PassWord"
           component={PassWord}
          
-        /> */}
+        />
          <Stack.Screen
           name="ortherBook"
           component={ortherBook}
