@@ -63,7 +63,7 @@ const WelcomeHome = ({navigation,route}) => {
           }}
         >
           <TouchableOpacity
-            onPress={() => [handledBackground("Dounut"),handledTastyDonut("Dounut")]}
+            onPress={() => [handledTastyDonut("Dounut"),setBackgroundButton("Dounut")]}
             style={{
               width: 80,
               height: 40,
@@ -77,7 +77,7 @@ const WelcomeHome = ({navigation,route}) => {
             <Text style={{ fontSize: 16, color: "black" }}>Dounut</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => [setBackgroundButton("Floating"),handledFloating("Floating")]}
+            onPress={() => [setBackgroundButton("Floating")]}
             style={{
               width: 80,
               height: 40,
@@ -100,7 +100,7 @@ const WelcomeHome = ({navigation,route}) => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-               onPress={() => [setBackgroundButton("Pink Donut"),handledPinkDounut()]}
+               onPress={() => [setBackgroundButton("Pink Donut")]}
             style={{
               width: 80,
               height: 40,
